@@ -23,10 +23,10 @@ function startGame() {
     }
     if (sum <= 20) {
     } else if (sum === 21) {
-        money += 25
+        money += 999
         playerMoney.textContent = "Money: Rm" + money
         message = "you have got a BlackJack!"
-        startEl.style.visibility = "visible"
+        // startEl.style.visibility = "visible"
         // newEl.style.visibility = "hidden"
         // For local database later
         // location.reload()
