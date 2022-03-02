@@ -35,8 +35,8 @@ function startGame() {
         isAlive = false
         money -= 25
         playerMoney.textContent = "Money: Rm" + money
-        startEl.style.visibility = "visible"
-        newEl.style.visibility = "hidden"
+        //startEl.style.visibility = "visible"
+        // newEl.style.visibility = "hidden"
         // For local database later
         // location.reload()
     }
