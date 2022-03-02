@@ -26,7 +26,6 @@ function startGame() {
         money += 25
         playerMoney.textContent = "Money: Rm" + money
         message = "you have got a BlackJack!"
-        hasBlackJack = true
         startEl.style.visibility = "visible"
         newEl.style.visibility = "hidden"
         // For local database later
