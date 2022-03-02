@@ -13,8 +13,8 @@ let message = ""
 let money = 50
 
 function startGame() {
-    newEl.style.visibility = "visible"
-    startEl.style.visibility ="hidden"
+//     newEl.style.visibility = "visible"
+//     startEl.style.visibility ="hidden"
     message = "new card?"
     sumEl.textContent = "sum : " + sum
     cardEl.textContent = "cards : "
