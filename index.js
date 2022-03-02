@@ -27,7 +27,7 @@ function startGame() {
         playerMoney.textContent = "Money: Rm" + money
         message = "you have got a BlackJack!"
         startEl.style.visibility = "visible"
-        newEl.style.visibility = "hidden"
+        // newEl.style.visibility = "hidden"
         // For local database later
         // location.reload()
     } else {
