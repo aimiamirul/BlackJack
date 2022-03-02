@@ -29,7 +29,7 @@ button {
 #new-el {
     color: goldenrod;
     background: green;
-    visibility: hidden;
+    // visibility: hidden;
 }
 footer {
     font-size: 12px;
