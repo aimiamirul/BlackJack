@@ -1,9 +1,14 @@
+//---------------Get document-------------
+
 let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardEl = document.getElementById("card-el")
 let newEl = document.getElementById("new-el")
 let startEl = document.getElementById("start-el")
 let playerMoney = document.getElementById("player-money")
+insEl = document.getElementById("ins-el")
+
+//---------------Named items-----------------
 
 let cards = []
 let sum = 0
@@ -12,10 +17,17 @@ let isAlive = false
 let message = ""
 let money = 50
 
+//------------------Event----------------
+
+startEl.addEventListener("click", renderGame)
+newEl.addEventListener("click", newCard)
+
+//---------------- Function-----------------
+
 function startGame() {
+    isAlive = true
+    insEl.style.visibility = "hidden"
     hasBlackJack = false
-    // newEl.style.visibility = "visible"
-    // startEl.style.visibility ="hidden"
     message = "new card?"
     sumEl.textContent = "sum : " + sum
     cardEl.textContent = "cards : "
@@ -24,23 +36,21 @@ function startGame() {
     }
     if (sum <= 20) {
         console.log("new cards")
+        //------When you get a blackjack---
     } else if (sum === 21) {
         money += 99
         playerMoney.textContent = "Money: Rm" + money
         hasBlackJack = true
         message = "you have got a BlackJack!"
-        // hasBlackJack = true
-        // startEl.style.visibility = "visible"
-        // newEl.style.visibility = "hidden"
+        hasBlackJack = true
         // For local database later
         // location.reload()
+        //----------When you lose-----------
     } else {
         message = "you are out of game"
         isAlive = false
         money -= 25
         playerMoney.textContent = "Money: Rm" + money
-        // startEl.style.visibility = "visible"
-        // newEl.style.visibility = "hidden"
         // For local database later
         // location.reload()
     }
