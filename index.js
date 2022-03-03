@@ -13,8 +13,9 @@ let message = ""
 let money = 50
 
 function startGame() {
-//     newEl.style.visibility = "visible"
-//     startEl.style.visibility ="hidden"
+    hasBlackJack = false
+    // newEl.style.visibility = "visible"
+    // startEl.style.visibility ="hidden"
     message = "new card?"
     sumEl.textContent = "sum : " + sum
     cardEl.textContent = "cards : "
@@ -22,10 +23,13 @@ function startGame() {
         cardEl.textContent += cards[i] + "|"
     }
     if (sum <= 20) {
+        console.log("new cards")
     } else if (sum === 21) {
-        money += 999
+        money += 99
         playerMoney.textContent = "Money: Rm" + money
+        hasBlackJack = true
         message = "you have got a BlackJack!"
+        // hasBlackJack = true
         // startEl.style.visibility = "visible"
         // newEl.style.visibility = "hidden"
         // For local database later
