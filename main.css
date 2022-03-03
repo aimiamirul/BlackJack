@@ -32,6 +32,16 @@ button {
     background: green;
     /* visibility: hidden; */
 }
+#start-el:hover {
+    background-color: white;
+    color: goldenrod;
+    cursor: pointer;
+}
+#new-el:hover {
+    background: white;
+    color: goldenrod;
+    cursor: pointer;
+}
 footer {
     font-size: 12px;
 }
